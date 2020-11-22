@@ -83,7 +83,7 @@ function task5(sColor1, sColor2) {
 //task6
 
 function createPage() {
-  var html = `<table border='1'>
+  var html = `<table id="table" border='1'>
            <caption>table caption</caption>
            <thead>
               <tr>
@@ -112,6 +112,7 @@ function createPage() {
            </tbody>
         </table>`;
   var iframe = document.createElement('iframe');
+  iframe.id="page";
   iframe.src = 'data:text/html;charset=utf-8,' + encodeURI(html);
   iframe.frameBorder = `0`;
   iframe.style = `overflow:hidden;
@@ -123,3 +124,8 @@ function createPage() {
 }
 
 //task7
+//unfinished
+function switchRows(){
+  var iframe=document.getElementById("page");
+  iframe.frameBorder="1";
+}
