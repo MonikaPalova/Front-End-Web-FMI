@@ -1,0 +1,398 @@
+body {
+  font-size: 16px;
+  margin: 0px;
+  background: linear-gradient(-100deg, #A2F2F1 0%, #B19AFE 100%);
+  height: 100vh;
+}
+
+* {
+  font-family: Helvetica, sans-serif;
+}
+
+form {
+  display: block;
+}
+
+p {
+  margin: 0px;
+}
+
+p+p {
+  margin-top: 1rem;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1rem;
+}
+
+td {
+  color: rgb(85, 190, 215);
+  font-weight: bold;
+  font-size: 1.125rem;
+  padding-left: 0.7em;
+}
+
+th {
+  font-size: 0.75rem;
+  color: rgb(147, 149, 161);
+  padding-left: 1em;
+}
+
+hr {
+  background-color: #e4e4e4;
+  border: none;
+  height: 1px;
+  margin-top: 0px;
+}
+
+input {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.round {
+  border-radius: 10px;
+}
+
+.box {
+  max-width: 32rem;
+  width: 90%;
+  background: white;
+  display: block;
+  padding: 2.5rem;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box-header {
+  font-size: 2.5rem;
+}
+
+.box-form-header {
+  opacity: 0.5;
+  font-size: 1.5rem;
+}
+
+.box-input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 100%;
+  border-bottom-color: rgb(94, 108, 224);
+  line-height: 2rem;
+}
+
+.box-input:focus {
+  border-color: rgb(84 189 214);
+}
+
+.link-reference {
+  font-size: 0.8rem;
+  width: 10rem;
+  padding-top: 1rem;
+  text-decoration: none;
+  color: rgb(112, 130, 226);
+}
+
+.round-button {
+  border-radius: 10em;
+}
+
+.round-button:hover {
+  border-color: rgb(84, 189, 214);
+  color: rgb(84, 189, 214);
+  background-color: white;
+}
+
+.homepage-header {
+  padding-left: 1em;
+}
+
+.homepage-box {
+  background: white;
+  display: block;
+  border: 1px #ebedfc;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+.comment {
+  margin: 1em;
+  display: flex;
+  flex-direction: row;
+  font-size: 0.875rem;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.comment-pic {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-right: 1em;
+}
+
+.comment-content {
+  width: 90%;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.comment-body {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.comment-footer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.5em;
+}
+
+.like-dislike-icon {
+  max-width: 1rem;
+  max-height: 1rem;
+  float: left;
+}
+
+.comment-author {
+  font-weight: bold;
+  padding-right: 0.5em;
+}
+
+.comment-time {
+  margin-top: 0;
+  color: rgb(145, 147, 159);
+  font-size: 0.9em;
+}
+
+.comment-delete {
+  margin-top: 0;
+  cursor: pointer;
+  font-size: 1.5em;
+  color: rgb(147, 149, 161);
+}
+
+.comment-delete:hover {
+  color: rgb(96, 200, 222);
+}
+
+.like-holder {
+  cursor: pointer;
+}
+
+.dislike-holder {
+  cursor: pointer;
+}
+
+.like-holder:hover .likes-dislikes-count {
+  color: rgb(96, 200, 222);
+}
+
+.dislike-holder:hover .likes-dislikes-count {
+  color: rgb(96, 200, 222);
+}
+
+.likes-dislikes-count {
+  width: 50px;
+  float: left;
+  padding-left: 3px;
+}
+
+#comment-table {
+  padding-bottom: 1rem;
+}
+
+#write-comment {
+  padding: 0.5em;
+  padding-right: 1em;
+  padding-left: 1em;
+  width: 100%;
+  margin: 0.5em;
+  color: rgb(96, 200, 222);
+  border-color: rgb(236, 237, 252);
+  border-style: double;
+  font-size: 1rem;
+  background-blend-mode: darken;
+  background-origin: content-box;
+  background-image: url('commenticon.png');
+  background-size: 1em;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#write-comment::placeholder {
+  color: rgb(96, 200, 222);
+}
+
+#write-comment:hover {
+  outline: none;
+  border-color: rgb(218 218 221);
+}
+
+#write-comment:focus {
+  outline: none;
+  border-color: rgb(96, 200, 222);
+}
+
+#submit-button {
+  max-width: 10rem;
+  background-color: rgb(84, 189, 214);
+  color: white;
+  width: 10rem;
+  margin-top: 1em;
+  cursor: pointer;
+  font-size: 1em;
+  height: 40px;
+  border: 2px solid rgb(84, 189, 214);
+}
+
+#profile-pic-icon {
+  height: 2rem;
+  width: 2rem;
+  align-self: center;
+}
+
+#timeline-top {
+  background: rgb(243, 252, 253);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 3rem;
+}
+
+#homepage-search {
+  border: none;
+  padding: 0.5em;
+  font-size: 1rem;
+  background-color: rgb(246, 247, 252);
+  background-image: url('searchicon.png');
+  background-size: 1.5em;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-blend-mode: darken;
+  background-origin: content-box;
+  margin: 0.5rem;
+  border: 1px solid rgb(236, 237, 252);
+}
+
+#homepage-search:hover {
+  outline: none;
+  border-color: rgb(218 218 221)
+}
+
+#contents {
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+#profile {
+  max-width: 18rem;
+  float: left;
+  width: 30%;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 13rem;
+}
+
+#timeline {
+  max-width: 55rem;
+  float: right;
+  width: 70%;
+  margin: 0.5rem;
+}
+
+#profile-pic {
+  width: 5.25rem;
+  height: 5.25rem;
+  position: relative;
+  margin-top: 0.5rem;
+}
+
+#stats {
+  width: 100%;
+  max-width: 18rem;
+  background-color: rgb(246, 247, 252);
+  height: 35%;
+  position: absolute;
+  bottom: 0px;
+  m;
+}
+
+#log-out-button {
+  float: right;
+  max-width: 10rem;
+  width: 30%;
+  margin: 1em;
+  background: transparent;
+  border: rgb(96, 200, 222);
+  border-style: solid;
+  font: inherit;
+  outline: none !important;
+  border-width: 2px;
+  font-weight: bold;
+  color: rgb(96, 200, 222);
+  height: 2.5em;
+}
+
+#log-out-button:hover {
+  background-color: rgb(96, 200, 222);
+  color: white;
+  cursor: pointer;
+}
+
+#name {
+  font-size: 1.2em;
+}
+
+#stats-table {
+  float: left;
+  padding: 1em;
+  padding-left: 0;
+}
+
+#box-top {
+  display: grid;
+}
+
+#box-content {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#box-bottom {
+  display: grid;
+  position: relative;
+  text-align: center;
+  justify-items: right;
+  float: right;
+}
