@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang=en>
+   <head>
+      <title>Homepage</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="styles/styles.css" />
+      <link rel="stylesheet" href="styles/responsiveness.css" />
+   </head>
+   <body>
+      <header>
+         <p class="box-header homepage-header">Flutter</p>
+         <input id="homepage-search" class="round-button" type="search" placeholder="Search" name="search">
+      </header>
+      <container id="contents">
+         <div id="profile" class="homepage-box">
+            <image id="profile-pic" class="circle center" src="pics/mike_profile_pic.jpg" />
+            <p id="name" class="center">Mike Wazowski</p>
+            <div id="stats">
+               <table id="stats-table">
+                  <thead>
+                     <tr>
+                        <th>Posts</th>
+                        <th>Reactions</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>1</td>
+                        <td>7</td>
+                     </tr>
+                  </tbody>
+               </table>
+               <button  id="log-out-button" class="round-button" >Log Out</button>
+            </div>
+         </div>
+         <div id="timeline" class="homepage-box">
+            <div id="timeline-top">
+               <image id="profile-pic-icon" class="circle" src="pics/mike_profile_pic.jpg"/>
+               <input id="write-comment" class="round-button" placeholder="Say something"/>
+            </div>
+            <div id="comment-table">
+               <hr/>
+               <div class="comment">
+                  <image class="comment-pic circle" src="pics/sully_profile_pic.jpg"/>
+                  <div class="comment-content">
+                     <div class="comment-header">
+                        <p class="comment-author">James P. Sullivan</p>
+                        <p class="comment-time">&#8226; 0 seconds ago</p>
+                     </div>
+                     <p class="comment-body">
+                        I don’t believe I ordered a wake-up call, Mikey.
+                     </p>
+                     <div class="comment-footer">
+                        <div class="like-holder">
+                           <img class="like-dislike-icon" src="pics/like.png">
+                           <p class="likes-dislikes-count">3</p>
+                        </div>
+                        <div class="dislike-holder">
+                           <img class="like-dislike-icon" src="pics/dislike.png">
+                           <p class="likes-dislikes-count">0</p>
+                        </div>
+                     </div>
+                  </div>
+                  <p class="comment-delete">&#215;</p>
+               </div>
+               <hr/>
+               <div class="comment">
+                  <image class="comment-pic circle" src="pics/mike_profile_pic.jpg"/>
+                  <div class="comment-content">
+                     <div class="comment-header">
+                        <p class="comment-author">Mike</p>
+                        <p class="comment-time">&#8226; 1 minute ago</p>
+                     </div>
+                     <p class="comment-body">
+                        Hey, good morning, Monstropolis. It's now five after the hour of 6:00 A.M. in the big monster city. Temperature's a balmy 65 degrees - which is good news for you reptiles - and it looks like it's gonna be a perfect day to maybe, hey, just lie in bed, sleep in, or simply... WORK OUT THAT FLAB THAT'S HANGING OVER THE BED. Get up, Sulley.
+                     </p>
+                     <div class="comment-footer">
+                        <div class="like-holder">
+                           <img class="like-dislike-icon" src="pics/like.png">
+                           <p class="likes-dislikes-count">3</p>
+                        </div>
+                        <div class="dislike-holder">
+                           <img class="like-dislike-icon" src="pics/dislike.png">
+                           <p class="likes-dislikes-count">0</p>
+                        </div>
+                     </div>
+                  </div>
+                  <p class="comment-delete">&#215;</p>
+               </div>
+            </div>
+         </div>
+      </container>
+   </body>
+</html>
