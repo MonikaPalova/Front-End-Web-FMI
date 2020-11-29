@@ -34,7 +34,7 @@ function register() {
 function _checkEmail(sEmail) {
   if (sEmail === "") {
     return _throwError("Email is required");
-  } else if (sEmail.indexOf("@") === -1) { //check for more than once
+  } else if (sEmail.indexOf("@") === -1) {
     return _throwError("Email must inlude \"@\"");
   } else if (sEmail.substring(sEmail.indexOf("@") + 1).indexOf(".") === -1) {
     return _throwError("Domain must have \".\"");
@@ -59,7 +59,6 @@ function _checkPassword(sPassword) {
 
 function _throwError(sMsg) {
   document.getElementById("errors").innerText = sMsg;
-  console.log(sMsg); //remove
   return false;
 }
 
