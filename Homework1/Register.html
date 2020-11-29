@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang=en>
-   <head>
-      <title>Register</title>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="styles/styles.css" />
-      <link rel="stylesheet" href="styles/responsiveness.css" />
-   </head>
-   <body>
-      <div class="box centered round">
-         <div id="box-top">
-            <p class="box-header">Flutter</p>
-            <p class="box-form-header">Join the community</p>
-         </div>
-         <form>
-            <div id="box-content">
-               <input class="box-input" type="text" placeholder="User Name" name="username" required><br>
-               <input class="box-input" type="text" placeholder="Email" name="email" required><br>
-               <input class="box-input" type="text" placeholder="Password" name="password" required><br>
-            </div>
-            <div id="box-bottom">
-               <input id="submit-button" class="round-button" type="submit" value="Submit" />
-            </div>
-         </form>
+
+<head>
+  <title>Register</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/responsiveness.css" />
+  <script src="scripts/controller.js"></script>
+</head>
+
+<body onload="init()">
+  <div class="box centered round">
+    <div id="box-top">
+      <p class="box-header">Flutter</p>
+      <p class="box-form-header">Join the community</p>
+    </div>
+    <form>
+      <div id="box-content">
+        <input class="box-input" type="text" placeholder="User Name" name="username"><br>
+        <input class="box-input" type="text" placeholder="Email" name="email"><br>
+        <div id="password-field">
+          <input id="password" class="box-input" type="password" placeholder="Password">
+          <button id="toggle-password-button" type="button" toggleClass="active" onclick="togglePasswordVisibility()">&#128065;</button>
+        </div><br>
+        <div class="errors" id="errors"></div>
       </div>
-   </body>
+      <div id="box-bottom">
+        <button id="submit-button" class="round-button" type="submit" onclick="register()">Submit</button>
+      </div>
+    </form>
+  </div>
+  <!-- Loads firebase client API, initializes db facade & loads the controller code -->
+  <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+  <script src="scripts/db-facade.js"></script>
+</body>
+
 </html>

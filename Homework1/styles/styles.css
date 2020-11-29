@@ -53,6 +53,7 @@ input {
   box-shadow: none !important;
 }
 
+
 .round {
   border-radius: 10px;
 }
@@ -90,6 +91,10 @@ input {
   width: 100%;
   border-bottom-color: rgb(94, 108, 224);
   line-height: 2rem;
+  position: relative;
+}
+
+input[type="password"]{
 }
 
 .box-input:focus {
@@ -395,4 +400,38 @@ input {
   text-align: center;
   justify-items: right;
   float: right;
+}
+
+#toggle-password-button {
+  background: transparent;
+  font-size: 1.5rem;
+  position: relative;
+  text-decoration: line-through;
+  border: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  float: right;
+  bottom: 3rem;
+  right: 10px;
+}
+
+#toggle-password-button:hover {
+  cursor: pointer;
+}
+
+#toggle-password-button:focus {
+  color: rgb(96, 200, 222);
+  outline: none !important;
+}
+
+#errors {
+  font-size: 10px;
+  color: rgb(94, 108, 224);
+  position: relative;
+  float: left;
+  bottom: 1rem;
+}
+
+#no-comments-message{
+
 }
